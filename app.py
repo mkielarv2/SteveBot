@@ -13,7 +13,7 @@ from discord.ext.commands import Context
 from dotenv import load_dotenv
 from mcrcon import MCRconException
 
-from azure_premanent_storage import AzurePermanentStorage
+from external.s3.azure_premanent_storage import AzurePermanentStorage
 from external.az.AzAuthException import AzAuthException
 from external.az.azure_controller import AzureController
 from external.rcon.rcon_controller import RconController
