@@ -1,1 +1,0 @@
-ssh -o "StrictHostKeyChecking no" -i ./heroku_key mkielar@viaxmc.duckdns.org cd $1 && screen -dmS server ./start.sh
