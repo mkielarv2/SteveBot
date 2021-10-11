@@ -1,0 +1,2 @@
+class AzAuthException(Exception):
+    pass

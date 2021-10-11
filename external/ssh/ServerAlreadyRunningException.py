@@ -1,0 +1,2 @@
+class ServerAlreadyRunningException(Exception):
+    pass
