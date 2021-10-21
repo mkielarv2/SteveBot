@@ -1,7 +1,7 @@
 import shutil
 from os.path import expanduser
 
-from file_manager import FileManager
+from external.s3.file_manager import FileManager
 
 
 class AzurePermanentStorage:
@@ -13,7 +13,7 @@ class AzurePermanentStorage:
         self.file_manager.upload_file_to_bucket('azure.zip')
 
     def restoreAzureCredentials(self):
-        self.file_manager.download_file_from_bucket('azure.zip', 'azure-restored.zip')
+        self.file_manager.download_file_from_bucket('azure.zip', '../../azure-restored.zip')
         try:
             shutil.rmtree(expanduser('~/.azure'))
         except OSError as e:
