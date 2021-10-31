@@ -56,7 +56,8 @@ There is a few ways to run you discord bot
 * Docker (recommended)
   * Install docker
   * Clone source code
-  * Run docker compose up
+  * Setup .env
+  * Run run_local.sh
 * Local (for development)
   * Clone source code
   * Setup virtual env
